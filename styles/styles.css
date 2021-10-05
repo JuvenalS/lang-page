@@ -1,0 +1,401 @@
+/* 
+=================================
+        Global Settings
+=================================
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 300px;
+    background-color: #eeeeee;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 
+=================================
+        Typography
+=================================
+*/
+
+
+/* 
+=================================
+        Image Settings
+=================================
+*/
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.logo-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+=================================
+        Header Settings
+=================================
+*/
+
+.header {
+    width: 100%;
+    min-width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #eeeeee;
+    padding: 10px 10px;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nav-bar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 37vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .header {
+    padding: 0;
+    }
+
+    .nav-bar ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+    }
+
+    .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+}
+
+@media (max-width: 600px) {
+    .header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+/* 
+=================================
+        Main Settings
+=================================
+*/
+
+.main {
+    margin-top: 60px;
+    min-width: 300px;
+}
+
+@media (max-width: 650px) {
+    .main {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin-top: 110px;
+    }
+}
+
+/* 
+=================================
+        Hero Settings
+=================================
+*/
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.email {
+    width: 100%;
+    height: 2rem;
+    margin-top: 5px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    text-indent: .5rem;
+}
+
+.submit {
+    display: block;
+    width: 150px;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #e9c80a;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    -webkit-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.submit:hover {
+    background-color: darkorange;
+}
+
+/* 
+=================================
+        Features Settings
+=================================
+*/
+
+.features {
+    width: 80vw;
+    min-width: 300px;
+    margin: 50px auto;
+}
+
+.features-items {
+    display: flex;
+    margin-top: 30px;
+}
+
+.features-items .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20%;
+    color: darkorange;
+}
+
+.features-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80%;
+    padding: 5px;
+}
+
+@media (max-width: 550px) {
+    .features-items .icon {
+        display: none;
+    }
+
+    .features-details{
+        border: 1px solid;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+}
+
+/* 
+=================================
+        How It Works Settings
+=================================
+*/
+
+.video {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* 
+=================================
+        Pricing Settings
+=================================
+*/
+
+.pricing-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pricing-item {
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.pricing-title {
+    background-color: #dddddd;
+    color: #000000;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.pricing-value {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.pricing-ul {
+    margin: 15px 0;
+}
+
+.pricing-ul li {
+    line-height: 1.7rem;
+    font-size: .9rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.btn {
+    background: #e9c80a;
+    border: none;
+    margin: 15px 0;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100px;
+    -webkit-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+@media (max-width: 800px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .pricing-item {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+}
+
+/* 
+=================================
+        Pricing Settings
+=================================
+*/
+
+.footer {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: #d5d5d5;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-list li {
+    padding: 0 10px;
+}
+
+.footer p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: .9rem;
+    color: #444444;
+}
